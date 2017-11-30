@@ -1,9 +1,13 @@
 body{
   background-color: #9FBDE1;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ultra', serif;
 }
-h1{
+p{
   margin: 0 auto;
-  font-size: 100px;
-  padding: 50px ;
+  font-size: 75px;
+  padding: 50px;
+  color: #7287BE;
+}
+a{
+  color: white;
 }
