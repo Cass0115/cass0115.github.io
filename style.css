@@ -3,19 +3,48 @@ body{
   font-family: 'Ultra', serif;
 }
 .about-section{
-  position:absolute;
-  width: 50%;
+  position:fixed;
+  left: 9%;
+  top: 40%;
+  max-width: 46%;
+  text-align: left;
 }
 .about-section h1{
-  padding: 48px;
-  margin-left: auto;
-  margin-right: auto;
+ font-weight: 200;
+ font-size: 56px;
 }
+.about-section p{
+  padding-top:2rem;
+  max-width: 77%;
+  line-height: 30px;
+}
+
 .project-section{
-  float:right;
+  position: absolute;
+  right: 0;
+  width: 50%;
   background-color: #7f97b4;
 }
-p{
+.project-section p{
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px;
+}
+,project{
+  display: inline-block;
+}
+img {
+  height: 100px;
+  width: 200px;
+}
+.first-project-section{
+  display: flew;
+}
+.project1{
+  width:45%;
+  background: lightblue;
+}
+.project2{
+  flex: 1;
+  width: 45%;
+  background: lightgreen;
 }
