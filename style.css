@@ -1,3 +1,4 @@
+
 body{
   background-color: #9FBDE1;
   font-family: 'Ultra', serif;
@@ -19,32 +20,24 @@ body{
   line-height: 30px;
 }
 
-.project-section{
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+  grid-auto-rows: 500px;
   position: absolute;
   right: 0;
   width: 50%;
   background-color: #7f97b4;
 }
-.project-section p{
+.wrapper p{
   margin: 0 auto;
   padding: 20px;
 }
-,project{
-  display: inline-block;
+.project{
+  background-color: lightblue;
+  padding: 2.5rem;
 }
 img {
   height: 100px;
   width: 200px;
-}
-.first-project-section{
-  display: flew;
-}
-.project1{
-  width:45%;
-  background: lightblue;
-}
-.project2{
-  flex: 1;
-  width: 45%;
-  background: lightgreen;
 }
