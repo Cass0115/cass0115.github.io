@@ -1,21 +1,43 @@
+html {
+  box-sizing: border-box;
+}
 
 body{
   background-color: #9FBDE1;
   font-family: 'Ultra', serif;
 }
-.about-section{
+.main-body{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 300px 300px 300px auto;
+
+}
+/* .about-section{
   position:fixed;
   left: 9%;
   top: 40%;
   max-width: 46%;
   text-align: left;
+} */
+.about-section{
+  background-color: lightgrey;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 5rem;
 }
+
+
 .about-section h1{
  font-weight: 200;
  font-size: 56px;
 }
 .about-section p{
-  padding-top:2rem;
+  padding-top: 2rem;
   max-width: 77%;
   line-height: 30px;
 }
@@ -23,7 +45,6 @@ body{
 .wrapper{
   display: grid;
   grid-template-columns: repeat(2, 20rem);
-  grid-auto-rows: 500px;
   position: absolute;
   right: 0;
   width: 50%;
@@ -40,4 +61,17 @@ body{
 img {
   height: 100px;
   width: 200px;
+}
+
+.large-image{
+  width: 100%;
+  height: 200px;
+  background-color: #00BFFF;
+}
+
+footer{
+  grid-area: footer;
+  width: 100%;
+  height: 200px;
+  background-color: #E6E6FA;
 }
