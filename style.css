@@ -1,127 +1,72 @@
-<<<<<<< HEAD
-* {box-sizing: border-box;}
-=======
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
-html {
+* {
   box-sizing: border-box;
 }
 
-body{
-  background-color: #9FBDE1;
-  font-family: 'Ultra', serif;
-}
-.main-body{
+.main-body {
   display: grid;
-<<<<<<< HEAD
-  /* grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 300px 300px 300px auto; */
-=======
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 300px 300px 300px auto;
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
-
 }
-/* .about-section{
-  position:fixed;
-  left: 9%;
-  top: 40%;
-  max-width: 46%;
-  text-align: left;
-} */
-.about-section{
-  background-color: lightgrey;
-<<<<<<< HEAD
-  /* grid-column-start: 1;
-  grid-column-end: span 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-  position: sticky;*/
- /* top: 0;
-  margin: 0 auto;
-  padding: 5rem; */
-=======
-  grid-column-start: 1;
-  grid-column-end: span 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
+
+.about-section {
+  height: 600px;
   position: sticky;
   top: 0;
-  margin: 0 auto;
-  padding: 5rem;
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
+  left: 0;
 }
 
-
-.about-section h1{
- font-weight: 200;
- font-size: 56px;
+.about-section h1 {
+  font-family: 'Canela Web';
+  font-weight: 200;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 10rem;
 }
-.about-section p{
+
+.about-section h3{
+  text-align: center;
+}
+
+.about-section p {
   padding-top: 2rem;
-  max-width: 77%;
+  max-width: 90%;
   line-height: 30px;
+  text-align: left;
+  padding-left: 5rem;
 }
 
-<<<<<<< HEAD
-.project{
+.projects {
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-columns: repeat(2, 20rem);
-  position: absolute;
-  right: 0;
-  width: 50%; */
   background-color: #7f97b4;
 }
-.project p{
-=======
-.wrapper{
-  display: grid;
-  grid-template-columns: repeat(2, 20rem);
-  position: absolute;
-  right: 0;
-  width: 50%;
-  background-color: #7f97b4;
-}
-.wrapper p{
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
-  margin: 0 auto;
-  padding: 20px;
-}
-.project{
+
+.project {
   background-color: lightblue;
   padding: 2.5rem;
 }
+
+.project h3{
+  font-family: 'Canela Web';
+  padding-top: 1rem;
+}
+
 img {
   height: 100px;
   width: 200px;
 }
 
-.large-image{
+.inner-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.large-image {
   width: 100%;
   height: 200px;
   background-color: #00BFFF;
 }
 
-footer{
-<<<<<<< HEAD
-  /* grid-area: footer; */
-=======
-  grid-area: footer;
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
+footer {
   width: 100%;
   height: 200px;
   background-color: #E6E6FA;
 }
-<<<<<<< HEAD
-
-.inner-wrapper {
-  display:grid;
-  grid-template-columns:50% 50%;
-}
-.inner-wrapper > div {
-  border: 1px solid black;
-  margin: 0;
-  padding: 0;
-}
-=======
->>>>>>> 4e0175c9acd691f5f877d690d3c1f0f83f40f2a1
