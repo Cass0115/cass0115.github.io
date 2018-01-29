@@ -5,6 +5,15 @@ Cass0115@gmail.com
 
 ## EXPERIENCE
 
+### BlinkUX · Seattle, WA · 09/2017-Present
+
+**Junior Frontend Developer**
+
+
+* Edited CSS designs within a Wordpress template for accessability and visual appeal. 
+* Worked efficiently with design and marketing associates to create the best solutions for the website.
+* Tested front-end code in multiple browsers to ensure cross-browser compatability.
+
 ### University of Washington Medical Center · Seattle, WA · 7/2014-Present
 
 **Pharmacy Technician**
