@@ -4,6 +4,7 @@
 
 .main-body {
   display: grid;
+  font-family: "essonnes-text";
 }
 
 .about-section {
@@ -17,12 +18,20 @@
   font-family: 'Canela Web';
   font-weight: 200;
   font-size: 56px;
-  text-align: center;
+  text-align: left;
   padding-top: 10rem;
+  padding-left: 5rem;
 }
 
-.about-section h3{
-  text-align: center;
+.about-section h3 {
+  text-align: left;
+  font-family: 'canada-type-gibson';
+  padding-left: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #a48db9;
 }
 
 .about-section p {
@@ -31,22 +40,42 @@
   line-height: 30px;
   text-align: left;
   padding-left: 5rem;
+  color: #000;
 }
 
 .projects {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #7f97b4;
+  background-color: #f2f1f6;
 }
 
 .project {
-  background-color: lightblue;
+  background-color: #f2f1f6;
   padding: 2.5rem;
+  color: #000;
 }
 
-.project h3{
+.project h3 {
   font-family: 'Canela Web';
   padding-top: 1rem;
+}
+
+h3 a{
+  color: #000;
+}
+
+ .project ul{
+   padding-left: 0;
+ }
+
+.project li {
+  font-family: 'canada-type-gibson';
+  list-style-type: none;
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #a48db9;
 }
 
 img {
@@ -62,52 +91,62 @@ img {
 .large-image {
   width: 100%;
   height: 400px;
-  background-color: #000;
+  background-color: #a48db9;
 }
 
-.large-image p{
-  color: #7f97b4;
+.large-image p {
+  color: #fff;
   text-align: center;
   font-size: 34px;
   margin: 0 auto;
   margin-top: 10rem;
   width: 80%;
-
+  font-family: 'canela web'
 }
 
 footer {
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
-  height:auto;
-  background-color: #E6E6FA;
+  height: auto;
+  background-color: #000;
+  color: #fff;
 }
-footer p{
+
+footer p {
   font-family: 'Canela Web';
   font-size: 20px;
 }
-.work-together{
+
+.work-together {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.footer-social{
+
+.footer-social {
   padding: 5rem;
 }
-.footer-social p{
+
+.footer-social p {
   padding-left: 2.8rem;
+  color: #fff;
 }
 
-.social-icon{
+.social-icon {
   list-style-type: none;
   display: inline-flex;
+  color: #fff;
 }
-.social-icon li{
+
+.social-icon li {
   padding: 0 5px;
+  color: #fff;
 }
-li < a{
+
+li < a {
   text-decoration: none;
 }
 
-.work{
+.work {
   padding: 5rem;
 }
