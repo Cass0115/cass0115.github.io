@@ -10,7 +10,7 @@
 .about-section {
   height: 600px;
   position: sticky;
-  top: 0;
+  top: 25vh;
   left: 0;
 }
 
@@ -50,8 +50,9 @@
 }
 
 .project {
-  background-color: #f2f1f6;
+  background-color: #fff;
   padding: 2.5rem;
+  margin: 25px 20px;
   color: #000;
 }
 
@@ -149,4 +150,33 @@ li < a {
 
 .work {
   padding: 5rem;
+}
+
+@media only screen and (max-width : 1300px){
+  .project {
+    padding: 1rem;
+    margin: 15px 10px;
+  }
+  img {
+    height: 125px;
+    width: 200px;
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width : 1030px){
+  .projects {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  img {
+    height: 150px;
+    width: 225px;
+    margin: 0 18%;
+  }
+}
+@media only screen and (max-width : 850px){
+  .main-body{
+    display: block;
+  }
 }
