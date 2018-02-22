@@ -16,17 +16,18 @@
 
 .about-section h1 {
   font-family: 'Canela Web';
-  font-weight: 200;
-  font-size: 56px;
+  font-weight: 300;
+  font-size: 68px;
   text-align: left;
-  padding-top: 10rem;
-  padding-left: 5rem;
+  padding-top: 25%;
+  padding-left: 20%;
+  color: #1b0f51;
 }
 
 .about-section h3 {
   text-align: left;
   font-family: 'canada-type-gibson';
-  padding-left: 5rem;
+  padding-left: 20%;
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: 600;
@@ -39,26 +40,40 @@
   max-width: 90%;
   line-height: 30px;
   text-align: left;
-  padding-left: 5rem;
-  color: #000;
+  padding-left: 20%;
+  padding-right: 8%;
+  padding-bottom: 10%;
+  color: #7b7b7b;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 40%;
   background-color: #f2f1f6;
 }
 
+
 .project {
   background-color: #fff;
-  padding: 2.5rem;
-  margin: 25px 20px;
+  padding: 10%;
+  margin: 25px 25px;
   color: #000;
+}
+
+.project p{
+  max-width: 80%;
+  color: #7b7b7b;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .project h3 {
   font-family: 'Canela Web';
+  font-size: 26px;
+  font-weight: 300;
   padding-top: 1rem;
+  text-align: left;
+  color: #1b0f51;
 }
 
 h3 a{
@@ -91,17 +106,19 @@ img {
 
 .large-image {
   width: 100%;
-  height: 400px;
+  height: 560px;
   background-color: #a48db9;
 }
 
 .large-image p {
   color: #fff;
-  text-align: center;
-  font-size: 34px;
+  text-align: left;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1.33;
   margin: 0 auto;
   margin-top: 10rem;
-  width: 80%;
+  width: 60%;
   font-family: 'canela web'
 }
 
@@ -110,7 +127,7 @@ footer {
   grid-template-columns: 50% 50%;
   width: 100%;
   height: auto;
-  background-color: #000;
+  background-color: #1b0f51;
   color: #fff;
 }
 
@@ -146,6 +163,7 @@ footer p {
 
 li < a {
   text-decoration: none;
+  color: #fff;
 }
 
 .work {
