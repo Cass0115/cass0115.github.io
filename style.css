@@ -10,7 +10,7 @@
 .about-section {
   height: 600px;
   position: sticky;
-  top: 25vh;
+  top: 20vh;
   left: 0;
 }
 
@@ -19,7 +19,7 @@
   font-weight: 300;
   font-size: 68px;
   text-align: left;
-  padding-top: 25%;
+  padding-top: 20%;
   padding-left: 20%;
   color: #1b0f51;
 }
@@ -50,13 +50,19 @@
   display: grid;
   grid-template-columns: 40% 40%;
   background-color: #f2f1f6;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
+.project-top{
+  background-color: #a48db9;
+  height: 12rem;
+  width: 100%;
+}
 
 .project {
   background-color: #fff;
-  padding: 10%;
-  margin: 25px 25px;
+  margin: 5% 5% 0 2.5%;
   color: #000;
 }
 
@@ -65,13 +71,15 @@
   color: #7b7b7b;
   line-height: 1.5;
   text-align: left;
+  padding-left: 8%;
 }
 
 .project h3 {
   font-family: 'Canela Web';
   font-size: 26px;
   font-weight: 300;
-  padding-top: 1rem;
+  padding-top: 10%;
+  padding-left: 8%;
   text-align: left;
   color: #1b0f51;
 }
@@ -92,11 +100,7 @@ h3 a{
   text-transform: uppercase;
   line-height: 22px;
   color: #a48db9;
-}
-
-img {
-  height: 150px;
-  width: 225px;
+  padding-left: 8%;
 }
 
 .inner-wrapper {
@@ -105,9 +109,13 @@ img {
 }
 
 .large-image {
+  background-image: url(images/terrazzo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
-  height: 560px;
-  background-color: #a48db9;
+  height: 450px;
+
 }
 
 .large-image p {
@@ -121,6 +129,8 @@ img {
   width: 60%;
   font-family: 'canela web'
 }
+
+/* Footer */
 
 footer {
   display: grid;
@@ -158,19 +168,20 @@ footer p {
 
 .social-icon li {
   padding: 0 5px;
-  color: #fff;
 }
 
-li < a {
-  text-decoration: none;
+.social-icon a{
   color: #fff;
 }
 
 .work {
   padding: 5rem;
 }
+.work a{
+  color: #fff;
+}
 
-@media only screen and (max-width : 1300px){
+/* @media only screen and (max-width: 1300px){
   .project {
     padding: 1rem;
     margin: 15px 10px;
@@ -182,7 +193,7 @@ li < a {
   }
 }
 
-@media only screen and (max-width : 1030px){
+@media only screen and (max-width: 1030px){
   .projects {
     display: grid;
     grid-template-columns: 100%;
@@ -193,8 +204,8 @@ li < a {
     margin: 0 18%;
   }
 }
-@media only screen and (max-width : 850px){
+@media only screen and (max-width: 850px){
   .main-body{
     display: block;
   }
-}
+} */
