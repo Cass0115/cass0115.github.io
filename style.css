@@ -7,6 +7,11 @@
   font-family: "essonnes-text";
 }
 
+.inner-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .about-section {
   height: 600px;
   position: sticky;
@@ -51,15 +56,15 @@
   background: radial-gradient(circle at 50% -27%, #fdb874, #cd7d2d);
   box-shadow: 0 10px 20px 0 rgba(205, 125, 45, 0.30);
   -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+  transition: all .3s ease;
 }
 
-.coffee:hover{
+.coffee:hover {
   box-shadow: 0 5px 10px 0 rgba(205, 125, 45, 0.30);
   background: radial-gradient(circle at 50% -60%, #fdb874, #cd7d2d);
 }
 
-.coffee .grab-coffee{
+.coffee .grab-coffee {
   font-weight: 600;
   letter-spacing: 5px;
   color: #ffffff;
@@ -67,10 +72,6 @@
   padding-left: 12%;
   padding-top: 5.5%;
 }
-
-/* .grab-coffee p{
-  font: 'canada-type-gibson';
-} */
 
 .projects {
   display: grid;
@@ -130,17 +131,12 @@ h3 a {
   padding-left: 8%;
 }
 
-.project .launch{
+.project .launch {
   font: 'canada-type-gibson';
   color: #cd7d2d;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 3.6px;
-}
-
-.inner-wrapper {
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .large-image {
@@ -152,7 +148,7 @@ h3 a {
   height: 450px;
 }
 
-.large-image p {
+.large-image blockquote {
   color: #fff;
   text-align: left;
   font-size: 42px;
@@ -161,7 +157,70 @@ h3 a {
   margin: 0 auto;
   margin-top: 10rem;
   width: 60%;
-  font-family: 'canela web'
+  font-family: 'canela web';
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.source {
+  font-family: "canada-type-gibson";
+  margin-left: 20%;
+  padding-top: 2%;
+  color: #fff;
+}
+
+/* Fact Section */
+
+.fact-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 965px;
+  background-color: #c78a4a;
+  color: #fff;
+}
+
+.fact-first{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  padding-top: 65vh;
+  margin-left: 5%;
+}
+.fact-second{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  padding-top: 10vh;
+}
+
+.fact-section h3{
+  border-top: 2px solid #fff;
+  width: 268px;
+  font-size: 68px;
+  font-family: 'Canela Web';
+}
+
+.fact-section h4{
+  font-size: 26px;
+  font-family: 'Canela Web';
+}
+
+.fact-section p{
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  width: 235px;
+  font-family: "essonnes-text";
+  letter-spacing: .4px;
 }
 
 /* Footer */
@@ -185,7 +244,7 @@ footer p {
   grid-template-columns: 50% 50%;
 }
 
-.footer-social {
+.footer-logo {
   padding: 5rem;
 }
 
