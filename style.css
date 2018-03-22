@@ -227,16 +227,15 @@ blockquote p {
 }
 
 /* photo-section */
-.photo-section{
+/* .photo-section{
   height: 1058px;
-}
+} */
 
 
 /* Footer */
 
 footer {
   display: grid;
-  grid-template-columns: 50% 50%;
   width: 100%;
   height: auto;
   background-color: #1b0f51;
@@ -251,6 +250,7 @@ footer p {
 .work-together {
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-top: 5%;
 }
 
 .footer-logo {
@@ -276,6 +276,9 @@ footer p {
   color: #fff;
 }
 
+.message a{
+  color: #fff;
+}
 
 /* @media only screen and (max-width: 1300px){
   .project {
