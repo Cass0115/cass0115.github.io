@@ -4,7 +4,6 @@
 
 .main-body {
   display: grid;
-  font-family: "essonnes-text";
 }
 
 .inner-wrapper {
@@ -75,10 +74,10 @@
 
 .projects {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 42% 42%;
   background-color: #f2f1f6;
   padding-top: 5%;
-  padding-left: 5%;
+  padding-left: 4%;
   padding-bottom: 5%;
 }
 
@@ -90,8 +89,7 @@
 
 .project {
   background-color: #fff;
-  margin: 5% 5% 0 2.5%;
-  color: #000;
+  margin: 5% 5% 2.5% 2.5%;
 }
 
 .project p {
@@ -131,12 +129,13 @@ h3 a {
   padding-left: 8%;
 }
 
-.project .launch {
-  font: 'canada-type-gibson';
+.project .learn {
+  font-family: 'canada-type-gibson';
   color: #cd7d2d;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 3.6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .large-image {
@@ -193,8 +192,8 @@ blockquote p {
 .fact-first{
   display: grid;
   grid-template-columns: 45% 45%;
-  padding-top: 65vh;
-  margin-left: 5%;
+  padding-top: 55vh;
+  margin-left: 6%;
 }
 .fact-second{
   display: grid;
@@ -222,6 +221,16 @@ blockquote p {
   font-family: "essonnes-text";
   letter-spacing: .4px;
 }
+
+.fact .two{
+  margin-left: 30px;
+}
+
+/* photo-section */
+.photo-section{
+  height: 1058px;
+}
+
 
 /* Footer */
 
@@ -267,13 +276,6 @@ footer p {
   color: #fff;
 }
 
-.work {
-  padding: 5rem;
-}
-
-.work a {
-  color: #fff;
-}
 
 /* @media only screen and (max-width: 1300px){
   .project {
