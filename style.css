@@ -282,22 +282,17 @@ footer {
   padding: 5rem;
 }
 
-.social a{
+.icon{
   color: #fff;
 }
 
-.social-icon {
+.list li{
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+}
+.list{
   list-style-type: none;
-  display: inline-flex;
-  color: #fff;
-}
-
-.social-icon li {
-  padding: 0 5px;
-}
-
-.social-icon a {
-  color: #fff;
 }
 
 .message a{
