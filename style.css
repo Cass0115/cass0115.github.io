@@ -75,11 +75,10 @@
 
 .projects {
   display: grid;
-  grid-template-columns: 42% 42%;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   background-color: #f2f1f6;
-  padding-top: 5%;
-  padding-left: 4%;
-  padding-bottom: 5%;
+  padding: 5%;
 }
 
 .project-top {
@@ -308,13 +307,16 @@ footer {
 }
 
 
-@media (min-width: 1200px) {
-  .main-body {
-     column-count: 3;
-  }
+@media (max-width: 1200px) {
+
 }
-@media (min-width: 900px) {
-  .main-body {
-     column-count: 2;
+@media (max-width: 1050px) {
+  .projects{
+    grid-template-columns: 1fr;
+  }
+  .project{
+    max-width: 30vw;
+    margin: 0;
+    align-items: center;
   }
 }
