@@ -81,16 +81,16 @@
   padding: 5%;
 }
 
-.project-top {
-  background-color: #a48db9;
-  height: 12rem;
-  width: 100%;
-}
-
 .project {
   background-color: #fff;
   margin: 5% 5% 2.5% 2.5%;
   padding-bottom: 4%;
+}
+
+.project-top {
+  background-color: #a48db9;
+  height: 12rem;
+  width: 100%;
 }
 
 .project p {
@@ -192,31 +192,32 @@ blockquote p {
   color: #fff;
 }
 
-.fact-first{
+.fact-first {
   display: grid;
   grid-template-columns: 45% 45%;
   padding-top: 55vh;
   margin-left: 6%;
 }
-.fact-second{
+
+.fact-second {
   display: grid;
   grid-template-columns: 45% 45%;
   padding-top: 10vh;
 }
 
-.fact-section h3{
+.fact-section h3 {
   border-top: 2px solid #fff;
-  width: 268px;
+  width: 70%;
   font-size: 68px;
   font-family: 'Canela Web';
 }
 
-.fact-section h4{
+.fact-section h4 {
   font-size: 26px;
   font-family: 'Canela Web';
 }
 
-.fact-section p{
+.fact-section p {
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
@@ -225,15 +226,15 @@ blockquote p {
   letter-spacing: .4px;
 }
 
-.fact .two{
+.fact .two {
   margin-left: 30px;
 }
 
 /* photo-section */
+
 /* .photo-section{
   height: 1058px;
 } */
-
 
 /* Footer */
 
@@ -251,17 +252,18 @@ footer {
   padding-top: 5%;
 }
 
-
-.work h3{
+.work h3 {
   font-family: 'Canela Web';
   font-size: 42px;
   font-weight: 300;
   line-height: 1.14;
 }
-.message-area{
+
+.message-area {
   float: left;
 }
-.message, .social{
+
+.message, .social {
   font-family: "canada-type-gibson";
   text-transform: uppercase;
   color: #a48db9;
@@ -269,17 +271,19 @@ footer {
   font-weight: 600;
   padding-top: 3rem;
 }
-.message a{
+
+.message a {
   color: #fff;
   float: left;
 }
 
-.email{
+.email {
   font-family: "essonnes-text";
   font-style: italic;
   font-size: 20px;
 }
-.email a{
+
+.email a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -288,35 +292,76 @@ footer {
   padding: 5rem;
 }
 
-.icon{
+.icon {
   color: #fff;
 }
 
-.list li{
+.list li {
   display: inline;
   padding: 10px;
   font-size: 20px;
 }
-.list{
+
+.list {
   list-style-type: none;
   padding: 0;
 }
-.social-area{
+
+.social-area {
   float: right;
   margin-right: 200px;
 }
 
-
-@media (max-width: 1200px) {
-
-}
 @media (max-width: 1050px) {
-  .projects{
+  .about-section h1{
+    padding-top: 5%;
+  }
+  .projects {
     grid-template-columns: 1fr;
   }
-  .project{
-    max-width: 30vw;
+  .project {
+    max-width: 35vw;
     margin: 0;
-    align-items: center;
+    justify-self: center;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .main-body {
+    display: block;
+  }
+  .inner-wrapper {
+    display: block;
+  }
+  .about-section {
+    height: 85vh;
+    position: relative;
+    top: 0;
+  }
+  .about-section h1 {
+    padding-top: 10%;
+  }
+  /* Projects */
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    padding-left: 32px;
+  }
+  /* Fact-section */
+  .fact-section {
+    height: 800px;
+    background-color: #c78a4a;
+    color: #fff;
+    display: block;
+  }
+  .fact-first {
+    padding-top: 10vh;
+    margin-left: 10%;
+  }
+  .fact-second {
+    padding-top: 10vh;
+    margin-left: 10%;
   }
 }
