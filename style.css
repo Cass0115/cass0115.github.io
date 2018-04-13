@@ -194,15 +194,17 @@ blockquote p {
 
 .fact-first {
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding-top: 55vh;
-  margin-left: 6%;
+  margin-left: 20%;
 }
 
 .fact-second {
   display: grid;
   grid-template-columns: 45% 45%;
   padding-top: 10vh;
+  margin-left: 7%;
+
 }
 
 .fact-section h3 {
@@ -316,13 +318,25 @@ footer {
   .about-section h1{
     padding-top: 5%;
   }
+
   .projects {
     grid-template-columns: 1fr;
+    padding: 0px 17%;
   }
+
   .project {
-    max-width: 35vw;
+    max-width: 30vw;
     margin: 0;
     justify-self: center;
+  }
+
+  .five{
+    margin-bottom: 7%;
+  }
+  .large-image blockquote{
+    font-size: 32px;
+    margin-top: 0;
+    padding-top: 9rem;
   }
 
 }
@@ -349,6 +363,7 @@ footer {
     grid-gap: 32px;
     padding-left: 32px;
   }
+
   /* Fact-section */
   .fact-section {
     height: 800px;
@@ -364,4 +379,17 @@ footer {
     padding-top: 10vh;
     margin-left: 10%;
   }
+}
+
+@media (max-width: 550px) {
+.about-section{
+    margin-bottom: 5%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
 }
