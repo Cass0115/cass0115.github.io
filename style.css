@@ -344,7 +344,6 @@ footer {
     display: block;
   }
   .about-section {
-    height: 50vh;
     position: relative;
     top: 0;
   }
@@ -386,8 +385,38 @@ footer {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0;
+    padding: 48px 0 0 0;
   }
+
+   /* image section */
+   .large-image {
+     background-image: url(images/terrazzo.jpg);
+     background-size: cover;
+     width: 100%;
+     height: 500px;
+   }
+
+    /* footer section */
+
+    footer{
+      display: block;
+      height: 90vh;
+    }
+    .social-area{
+      margin: 0;
+      float: left;
+    }
+    .work-together{
+      display: block;
+      margin-left: 10%;
+      padding-top: 15%;
+    }
+    .work h3{
+      padding-top: 10%;
+    }
+    .footer-logo {
+      padding: 1rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -398,27 +427,58 @@ footer {
   }
   .about-section h1 {
     padding-left: 0;
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 48px;
   }
   .about-section h3 {
     padding-left: 0;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   .about-section p {
     padding-left: 0;
-    margin-left: 20%;
+    margin-left: 10%;
+  }
+  .coffee{
+    margin-left: 10%;
   }
   .coffee .grab-coffee {
     padding-left: 0;
   }
   .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 123%;
-    padding-top: 48px;
+    display: block;
+    padding: 12px;
+    padding-left: 10%;
   }
   .project {
-    max-width: 70vw;
+    max-width: 80vw;
+    margin-top: 32px;
+  }
+
+  /* image blockquote */
+  .large-image blockquote{
+    font-size: 28px;
+    width: 80%;
+    padding-top: 7rem;
+  }
+
+  /* fact section */
+  .fact-section {
+    display: block;
+    height: 1300px;
+  }
+  .fact-first {
+    display: block;
+    margin-left: 10%;
+    padding-top: 1rem;
+  }
+
+  .fact-second {
+    display: block;
+    margin-left: 10%;
+    padding-top: 0;
+  }
+
+  .fact{
+    padding-top: 2rem;
   }
 }
