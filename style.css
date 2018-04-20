@@ -349,6 +349,17 @@ footer {
   }
   .about-section h1 {
     padding-top: 10%;
+    padding-left: 10%;
+  }
+  .about-section h3 {
+    padding-left: 10%;
+  }
+  .about-section p {
+    padding-left: 10%;
+  }
+  .coffee{
+    margin-left: 10%;
+    padding-left: 1%;
   }
   /* Projects */
   .projects {
