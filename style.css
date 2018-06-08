@@ -14,7 +14,8 @@
 .about-section {
   height: 600px;
   position: sticky;
-  top: 18vh;
+  posititon: -webkit-sticky;
+  top: 200px;
   left: 0;
 }
 
