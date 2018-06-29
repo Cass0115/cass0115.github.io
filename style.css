@@ -14,7 +14,7 @@
 .about-section {
   height: 600px;
   position: sticky;
-  posititon: -webkit-sticky;
+  position: -webkit-sticky;
   top: 200px;
   left: 0;
 }
@@ -24,7 +24,7 @@
   font-weight: 300;
   font-size: 68px;
   text-align: left;
-  padding-top: 20%;
+  padding-top: 10vh;
   padding-left: 20%;
   color: #1b0f51;
 }
@@ -137,7 +137,7 @@ h3 a {
   color: #cd7d2d;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   margin-left: 8%;
 }
@@ -196,15 +196,15 @@ blockquote p {
 .fact-first {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding-top: 55vh;
+  padding-top: 60vh;
   margin-left: 20%;
 }
 
 .fact-second {
   display: grid;
   grid-template-columns: 45% 45%;
-  padding-top: 10vh;
-  margin-left: 7%;
+    padding-top: 13vh;
+    padding-left: 5vw;
 }
 
 .fact-section h3 {
@@ -212,6 +212,7 @@ blockquote p {
   width: 70%;
   font-size: 68px;
   font-family: 'Canela Web';
+  padding-top: 2vh;
 }
 
 .fact-section h4 {
@@ -251,7 +252,8 @@ footer {
 .work-together {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-top: 5%;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
 }
 
 .work h3 {
