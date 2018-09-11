@@ -65,6 +65,10 @@
   background: radial-gradient(circle at 50% -60%, #fdb874, #cd7d2d);
 }
 
+.coffee a:hover {
+  text-decoration: none !important;
+}
+
 .coffee .grab-coffee {
   font-weight: 600;
   letter-spacing: 5px;
@@ -364,6 +368,7 @@ footer {
     margin-left: 10%;
     padding-left: 1%;
   }
+
   /* Projects */
   .projects {
     display: grid;
