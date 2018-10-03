@@ -189,29 +189,47 @@ blockquote p {
 
 /* Fact Section */
 
-.fact-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.fact__section {
   height: 965px;
   background-color: #c78a4a;
   color: #fff;
+  padding-top: 10em;
+}
+.fact__wrap {
+  width: 94%;
+  margin: 0 auto;
+}
+.one {
+  grid-area: f;
+}
+.two {
+  grid-area: h;
 }
 
 .fact-first {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding-top: 60vh;
-  margin-left: 20%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 275px;
+  grid-template-areas:
+    "a b c d e f g h";
 }
 
 .fact-second {
   display: grid;
-  grid-template-columns: 45% 45%;
-    padding-top: 13vh;
-    padding-left: 5vw;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 275px;
+  grid-template-areas:
+    'i j k l m n o p ';
+  padding-top: 2em;
+}
+.three {
+  grid-area: i;
+}
+.four {
+  grid-area: k;
 }
 
-.fact-section h3 {
+.fact__section h3 {
   border-top: 2px solid #fff;
   width: 70%;
   font-size: 68px;
@@ -219,22 +237,18 @@ blockquote p {
   padding-top: 2vh;
 }
 
-.fact-section h4 {
+.fact__section h4 {
   font-size: 26px;
   font-family: 'Canela Web';
 }
 
-.fact-section p {
+.fact__section p {
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
   width: 235px;
   font-family: "essonnes-text";
   letter-spacing: .4px;
-}
-
-.fact .two {
-  margin-left: 30px;
 }
 
 /* photo-section */
@@ -248,9 +262,15 @@ blockquote p {
 footer {
   display: grid;
   width: 100%;
-  height: auto;
-  background-color: #1b0f51;
   color: #fff;
+}
+
+.footer {
+  height: 650px;
+  background-color: #1b0f51;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .work-together {
@@ -381,20 +401,12 @@ footer {
     max-width: 35vw;
   }
   /* Fact-section */
-  .fact-section {
-    height: 800px;
-    background-color: #c78a4a;
-    color: #fff;
-    display: block;
-  }
-  .fact-first {
-    padding-top: 10vh;
-    margin-left: 10%;
-  }
-  .fact-second {
-    padding-top: 10vh;
-    margin-left: 10%;
-  }
+  .one {
+  grid-area: a;
+}
+.two {
+  grid-area: c;
+}
 }
 
 @media (max-width: 550px) {
@@ -476,19 +488,15 @@ footer {
     padding-top: 7rem;
   }
   /* fact section */
-  .fact-section {
+  .fact__section {
     display: block;
-    height: 1300px;
+    height: 100%;
   }
   .fact-first {
     display: block;
-    margin-left: 10%;
-    padding-top: 1rem;
   }
   .fact-second {
     display: block;
-    margin-left: 10%;
-    padding-top: 0;
   }
   .fact {
     padding-top: 2rem;
