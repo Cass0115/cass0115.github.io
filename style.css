@@ -81,7 +81,7 @@
 .projects {
   display: grid;
   grid-gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   background-color: #f2f1f6;
   padding: 5%;
 }
@@ -90,7 +90,6 @@
   background-color: #fff;
   margin: 0 2.5%;
   padding-bottom: 4%;
-  min-width: 250px;
 }
 
 .project-top {
@@ -134,6 +133,7 @@ h3 a {
   text-transform: uppercase;
   line-height: 22px;
   color: #a48db9;
+  font-weight: 600;
   padding-left: 8%;
 }
 
@@ -264,11 +264,10 @@ footer {
   display: grid;
   width: 100%;
   color: #fff;
+  background-color: #1b0f51;
 }
 
 .footer {
-  height: 650px;
-  background-color: #1b0f51;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -345,12 +344,7 @@ footer {
   .about-section h1 {
     padding-top: 5%;
   }
-  .projects {
-    grid-template-columns: 1fr;
-    padding: 0px 17%;
-  }
   .project {
-    max-width: 30vw;
     margin: 0;
     justify-self: center;
   }
@@ -389,18 +383,6 @@ footer {
     margin-left: 10%;
     padding-left: 1%;
   }
-
-  /* Projects */
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
-    padding-left: 32px;
-    padding-top: 56px;
-  }
-  .project {
-    max-width: 35vw;
-  }
   /* Fact-section */
   .one {
   grid-area: a;
@@ -413,11 +395,6 @@ footer {
 @media (max-width: 550px) {
   .about-section {
     margin-bottom: 5%;
-  }
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 48px 0 0 0;
   }
   /* image section */
   .large-image {
@@ -473,13 +450,7 @@ footer {
   .coffee .grab-coffee {
     padding-left: 0;
   }
-  .projects {
-    display: block;
-    padding: 12px;
-    padding-left: 10%;
-  }
   .project {
-    max-width: 80vw;
     margin-top: 32px;
   }
   /* image blockquote */
