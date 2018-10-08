@@ -80,16 +80,17 @@
 
 .projects {
   display: grid;
-  grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   background-color: #f2f1f6;
   padding: 5%;
 }
-
+/* TODO: look at max-width of container */
 .project {
   background-color: #fff;
-  margin: 5% 5% 2.5% 2.5%;
+  margin: 0 2.5%;
   padding-bottom: 4%;
+  min-width: 250px;
 }
 
 .project-top {
