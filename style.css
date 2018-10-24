@@ -81,14 +81,13 @@
 .projects {
   display: grid;
   grid-gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 315px));
   background-color: #f2f1f6;
   padding: 5%;
 }
-/* TODO: look at max-width of container */
+
 .project {
   background-color: #fff;
-  margin: 0 2.5%;
   padding-bottom: 4%;
 }
 
@@ -196,20 +195,36 @@ blockquote p {
   color: #fff;
   padding-top: 10em;
 }
-.fact__wrap {
-  width: 94%;
-  margin: 0 auto;
+/* .fact__wrap {
+  display: grid;
+  grid-template-areas:
+    "a b c d e f g h"
+    "i j k l m n o p";
+  grid-template-rows: 250px 250px;
+  grid-template-columns: repeat(8, 1fr);
 }
 .one {
-  grid-area: f;
+ grid-area: e;
 }
 .two {
-  grid-area: h;
+ grid-area: g;
+}
+.three {
+ grid-area: j;
+}
+.four {
+ grid-area: l;  
+} */
+.one {
+  grid-area: e;
+}
+.two {
+  grid-area: g;
 }
 
 .fact-first {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 210px);
   grid-auto-rows: 275px;
   grid-template-areas:
     "a b c d e f g h";
@@ -217,22 +232,22 @@ blockquote p {
 
 .fact-second {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 170px);
   grid-auto-rows: 275px;
   grid-template-areas:
-    'i j k l m n o p ';
+    'i j k l m n o p';
   padding-top: 2em;
 }
 .three {
-  grid-area: i;
+  grid-area: j;
 }
 .four {
-  grid-area: k;
+  grid-area: l;
 }
 
 .fact__section h3 {
   border-top: 2px solid #fff;
-  width: 70%;
+  width: 260px;
   font-size: 68px;
   font-family: 'Canela Web';
   padding-top: 2vh;
