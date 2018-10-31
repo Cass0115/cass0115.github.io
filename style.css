@@ -197,7 +197,7 @@ blockquote p {
   padding-top: 10em;
 }
 .fact__wrap {
-  width: 94%;
+  width: 80%;
   margin: 0 auto;
 }
 .one {
@@ -262,6 +262,8 @@ footer {
 }
 
 .footer {
+  height: 100%;
+  background-color: #1b0f51;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -399,6 +401,17 @@ footer {
     width: 100%;
     height: 500px;
   }
+  /* fact section */
+  .fact__section {
+    height: 100%;
+    padding-bottom: 10em;
+  }
+  .fact-first {
+    display: block;
+  }
+  .fact-second {
+    display: block;
+  }
   /* footer section */
   footer {
     display: block;
@@ -455,18 +468,5 @@ footer {
     width: 80%;
     padding-top: 7rem;
   }
-  /* fact section */
-  .fact__section {
-    display: block;
-    height: 100%;
-  }
-  .fact-first {
-    display: block;
-  }
-  .fact-second {
-    display: block;
-  }
-  .fact {
-    padding-top: 2rem;
-  }
+
 }
