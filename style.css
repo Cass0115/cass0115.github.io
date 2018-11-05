@@ -1,22 +1,23 @@
-* {
-  box-sizing: border-box;
+section {
+  position: relative;
+  z-index: 2;
 }
-
-.main-body {
-  display: grid;
+.empty-div {
+  height: 33rem;
 }
-
 .inner-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
 .about-section {
-  height: 600px;
+  height: 100%;
   position: sticky;
   position: -webkit-sticky;
-  top: 200px;
   left: 0;
+  top:0;
+  background-color: #fff;
+  padding-top: 20rem;
 }
 
 .about-section h1 {
@@ -24,7 +25,6 @@
   font-weight: 300;
   font-size: 68px;
   text-align: left;
-  padding-top: 10vh;
   padding-left: 20%;
   color: #1b0f51;
 }
@@ -258,15 +258,17 @@ footer {
   display: grid;
   width: 100%;
   color: #fff;
-  background-color: #1b0f51;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; 
 }
 
 .footer {
+  color: #fff;
   height: 100%;
   background-color: #1b0f51;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .work-together {
@@ -364,8 +366,9 @@ footer {
     display: block;
   }
   .about-section {
+    padding-bottom: 10rem;
     position: relative;
-    top: 0;
+    padding-top: 5rem;
   }
   .about-section h1 {
     padding-top: 10%;
@@ -381,6 +384,19 @@ footer {
     margin-left: 10%;
     padding-left: 1%;
   }
+
+  /* Projects */
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    padding-left: 32px;
+    padding-top: 56px;
+    padding-bottom: 5rem;
+  }
+  .project {
+    max-width: 35vw;
+  }
   /* Fact-section */
   .one {
   grid-area: a;
@@ -391,8 +407,10 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .about-section {
-    margin-bottom: 5%;
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 48px 0 0 0;
   }
   /* image section */
   .large-image {
@@ -424,7 +442,7 @@ footer {
   .work-together {
     display: block;
     margin-left: 10%;
-    padding-top: 15%;
+    padding-top: 35vh;
   }
   .work h3 {
     padding-top: 10%;
@@ -437,7 +455,6 @@ footer {
 @media (max-width: 425px) {
   .about-section {
     justify-content: center;
-    margin-bottom: 12%;
     height: 100%;
   }
   .about-section h1 {
@@ -468,5 +485,4 @@ footer {
     width: 80%;
     padding-top: 7rem;
   }
-
 }
