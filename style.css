@@ -1,22 +1,23 @@
-* {
-  box-sizing: border-box;
+section {
+  position: relative;
+  z-index: 2;
 }
-
-.main-body {
-  display: grid;
+.empty-div {
+  height: 33rem;
 }
-
 .inner-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
 .about-section {
-  height: 600px;
+  height: 100%;
   position: sticky;
   position: -webkit-sticky;
-  top: 200px;
   left: 0;
+  top:0;
+  background-color: #fff;
+  padding-top: 20rem;
 }
 
 .about-section h1 {
@@ -24,7 +25,6 @@
   font-weight: 300;
   font-size: 68px;
   text-align: left;
-  padding-top: 10vh;
   padding-left: 20%;
   color: #1b0f51;
 }
@@ -74,14 +74,14 @@
   letter-spacing: 5px;
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 12%;
+  padding-left: 15%;
   padding-top: 5.5%;
 }
 
 .projects {
   display: grid;
   grid-gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   background-color: #f2f1f6;
   padding: 5%;
 }
@@ -90,13 +90,13 @@
   background-color: #fff;
   margin: 0 2.5%;
   padding-bottom: 4%;
-  min-width: 250px;
 }
 
 .project-top {
   background-color: #a48db9;
   height: 12rem;
   width: 100%;
+  font-weight: 600;
 }
 
 .project p {
@@ -153,18 +153,18 @@ h3 a {
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 550px;
 }
 
 .large-image blockquote {
   color: #fff;
-  text-align: left;
+  text-align: center;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.33;
   margin: 0 auto;
-  margin-top: 10rem;
-  width: 60%;
+  padding-top: 8rem;
+  width: 65%;
   font-family: 'canela web';
   quotes: "\201C""\201D""\2018""\2019";
 }
@@ -178,13 +178,13 @@ blockquote::before {
 }
 
 blockquote p {
-  display: inline;
+  display: block;
 }
 
 .source {
   font-family: "canada-type-gibson";
-  margin-left: 20%;
-  padding-top: 2%;
+  text-align: center;
+  padding-top: 1%;
   color: #fff;
 }
 
@@ -197,7 +197,7 @@ blockquote p {
   padding-top: 10em;
 }
 .fact__wrap {
-  width: 94%;
+  width: 80%;
   margin: 0 auto;
 }
 .one {
@@ -252,26 +252,23 @@ blockquote p {
   letter-spacing: .4px;
 }
 
-/* photo-section */
-
-/* .photo-section{
-  height: 1058px;
-} */
-
 /* Footer */
 
 footer {
   display: grid;
   width: 100%;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; 
 }
 
 .footer {
-  height: 650px;
+  color: #fff;
+  height: 100%;
   background-color: #1b0f51;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .work-together {
@@ -283,7 +280,7 @@ footer {
 
 .work h3 {
   font-family: 'Canela Web';
-  font-size: 42px;
+  font-size: 68px;
   font-weight: 300;
   line-height: 1.14;
 }
@@ -296,9 +293,10 @@ footer {
   font-family: "canada-type-gibson";
   text-transform: uppercase;
   color: #a48db9;
-  font-size: 10px;
   font-weight: 600;
   padding-top: 3rem;
+  letter-spacing: 4px;
+  font-size: 12px;
 }
 
 .message a {
@@ -309,7 +307,7 @@ footer {
 .email {
   font-family: "essonnes-text";
   font-style: italic;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .email a {
@@ -318,7 +316,7 @@ footer {
 }
 
 .footer-logo {
-  padding: 5rem;
+  padding: 4.5rem 5rem 4.5rem 5rem;
 }
 
 .icon {
@@ -328,7 +326,7 @@ footer {
 .list li {
   display: inline;
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .list {
@@ -345,12 +343,7 @@ footer {
   .about-section h1 {
     padding-top: 5%;
   }
-  .projects {
-    grid-template-columns: 1fr;
-    padding: 0px 17%;
-  }
   .project {
-    max-width: 30vw;
     margin: 0;
     justify-self: center;
   }
@@ -372,8 +365,9 @@ footer {
     display: block;
   }
   .about-section {
+    padding-bottom: 10rem;
     position: relative;
-    top: 0;
+    padding-top: 5rem;
   }
   .about-section h1 {
     padding-top: 10%;
@@ -389,18 +383,6 @@ footer {
     margin-left: 10%;
     padding-left: 1%;
   }
-
-  /* Projects */
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
-    padding-left: 32px;
-    padding-top: 56px;
-  }
-  .project {
-    max-width: 35vw;
-  }
   /* Fact-section */
   .one {
   grid-area: a;
@@ -411,20 +393,23 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .about-section {
-    margin-bottom: 5%;
-  }
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 48px 0 0 0;
-  }
   /* image section */
   .large-image {
     background-image: url(images/terrazzo.jpg);
     background-size: cover;
     width: 100%;
     height: 500px;
+  }
+  /* fact section */
+  .fact__section {
+    height: 100%;
+    padding-bottom: 10em;
+  }
+  .fact-first {
+    display: block;
+  }
+  .fact-second {
+    display: block;
   }
   /* footer section */
   footer {
@@ -438,7 +423,7 @@ footer {
   .work-together {
     display: block;
     margin-left: 10%;
-    padding-top: 15%;
+    padding-top: 35vh;
   }
   .work h3 {
     padding-top: 10%;
@@ -451,7 +436,6 @@ footer {
 @media (max-width: 425px) {
   .about-section {
     justify-content: center;
-    margin-bottom: 12%;
     height: 100%;
   }
   .about-section h1 {
@@ -473,13 +457,7 @@ footer {
   .coffee .grab-coffee {
     padding-left: 0;
   }
-  .projects {
-    display: block;
-    padding: 12px;
-    padding-left: 10%;
-  }
   .project {
-    max-width: 80vw;
     margin-top: 32px;
   }
   /* image blockquote */
@@ -487,19 +465,5 @@ footer {
     font-size: 28px;
     width: 80%;
     padding-top: 7rem;
-  }
-  /* fact section */
-  .fact__section {
-    display: block;
-    height: 100%;
-  }
-  .fact-first {
-    display: block;
-  }
-  .fact-second {
-    display: block;
-  }
-  .fact {
-    padding-top: 2rem;
   }
 }
