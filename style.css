@@ -137,7 +137,6 @@ h3 a {
   text-transform: uppercase;
   line-height: 22px;
   color: #a48db9;
-  font-weight: 600;
   padding-left: 8%;
 }
 
@@ -278,8 +277,8 @@ footer {
 .work-together {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-top: 30vh;
-  padding-bottom: 30vh;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
 }
 
 .work h3 {
@@ -320,13 +319,11 @@ footer {
 }
 
 .footer-logo {
-  padding: 4.5rem 5rem 4.5rem 20%;
-
+  padding: 4.5rem 5rem 4.5rem 5rem;
 }
 
 .icon {
   color: #fff;
-  width:
 }
 
 .list li {
@@ -472,3 +469,5 @@ footer {
     width: 80%;
     padding-top: 7rem;
   }
+}
+
