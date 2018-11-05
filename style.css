@@ -96,6 +96,7 @@ section {
   background-color: #a48db9;
   height: 12rem;
   width: 100%;
+  font-weight: 600;
 }
 
 .project p {
@@ -316,7 +317,8 @@ footer {
 }
 
 .footer-logo {
-  padding: 4.5rem 5rem 4.5rem 5rem;
+  padding: 4.5rem 5rem 4.5rem 20%;
+
 }
 
 .icon {
@@ -384,19 +386,6 @@ footer {
     margin-left: 10%;
     padding-left: 1%;
   }
-
-  /* Projects */
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
-    padding-left: 32px;
-    padding-top: 56px;
-    padding-bottom: 5rem;
-  }
-  .project {
-    max-width: 35vw;
-  }
   /* Fact-section */
   .one {
   grid-area: a;
@@ -407,11 +396,6 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 48px 0 0 0;
-  }
   /* image section */
   .large-image {
     background-image: url(images/terrazzo.jpg);
@@ -485,4 +469,3 @@ footer {
     width: 80%;
     padding-top: 7rem;
   }
-}
