@@ -44,7 +44,7 @@ section {
 }
 
 .about-section p {
-  font-family: "essonnes-headline";
+  font-family: "essonnes-dispay";
   max-width: 90%;
   line-height: 30px;
   text-align: left;
@@ -93,7 +93,7 @@ section {
   background-color: #fff;
   margin: 0 2.5%;
   padding-bottom: 5%;
-  min-height: 555px;  
+  min-height: 565px;  
   position: relative;
 }
 
@@ -104,8 +104,12 @@ section {
   max-width: 300px; 
 }
 
+.project-top img {
+  width: 100%;
+}
+
 .project p {
-  font-family: "essonnes-headline";
+  font-family: "essonnes-dispay";
   max-width: 80%;
   color: #7b7b7b;
   line-height: 1.5;
@@ -268,7 +272,7 @@ blockquote p {
   line-height: 1.6;
   text-align: left;
   width: 235px;
-  font-family: "essonnes-text";
+  font-family: "essonnes-display";
   letter-spacing: .4px;
 }
 
