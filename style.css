@@ -44,7 +44,7 @@ section {
 }
 
 .about-section p {
-  font-family: "essonnes-text";
+  font-family: "essonnes-headline";
   max-width: 90%;
   line-height: 30px;
   text-align: left;
@@ -105,7 +105,7 @@ section {
 }
 
 .project p {
-  font-family: "essonnes-text";
+  font-family: "essonnes-headline";
   max-width: 80%;
   color: #7b7b7b;
   line-height: 1.5;
