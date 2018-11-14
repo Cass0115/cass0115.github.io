@@ -1,10 +1,3 @@
-section {
-  position: relative;
-  z-index: 2;
-}
-.empty-div {
-  height: 33rem;
-}
 .inner-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -14,7 +7,7 @@ section {
  }
 
 .about-section {
-  height: 100%;
+  height: 50%;
   position: sticky;
   position: -webkit-sticky;
   left: 0;
@@ -221,14 +214,8 @@ blockquote p {
   padding-top: 10em;
 }
 .fact__wrap {
-  width: 80%;
-  margin: 0 auto;
-}
-.one {
-  grid-area: f;
-}
-.two {
-  grid-area: h;
+  margin-left: 10%;
+  margin-right: 11%;
 }
 
 .fact-first {
@@ -239,30 +226,40 @@ blockquote p {
     "a b c d e f g h";
 }
 
+.one {
+  grid-area: g;
+  margin-right: 11%;
+}
+.two {
+  grid-area: h;
+}
+
 .fact-second {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 275px;
   grid-template-areas:
     'i j k l m n o p ';
-  padding-top: 2em;
+  padding-top: 8em;
 }
 .three {
   grid-area: i;
 }
 .four {
-  grid-area: k;
+  grid-area: j;
+  margin-left: 11%;
 }
 
 .fact__section h3 {
   border-top: 2px solid #fff;
-  width: 70%;
+  width: 285px;
   font-size: 68px;
   font-family: 'Canela Web';
   padding-top: 2vh;
 }
 
 .fact__section h4 {
+  padding-top: 40px;
   font-size: 26px;
   font-family: 'Canela Web';
 }
@@ -282,11 +279,6 @@ footer {
   display: grid;
   width: 100%;
   color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1; 
 }
 
 .footer {
@@ -410,10 +402,30 @@ footer {
   /* Fact-section */
   .one {
   grid-area: a;
+  }
+  .two {
+    grid-area: c;
+  } 
 }
-.two {
-  grid-area: c;
-}
+
+@media (max-width: 700px) {
+  .fact__section {
+    height: 100%;
+    padding-bottom: 10em;
+  }
+  .fact-first,
+  .fact-second {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    margin-left: 5%;
+    padding-top: 6%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -424,17 +436,7 @@ footer {
     width: 100%;
     height: 500px;
   }
-  /* fact section */
-  .fact__section {
-    height: 100%;
-    padding-bottom: 10em;
-  }
-  .fact-first {
-    display: block;
-  }
-  .fact-second {
-    display: block;
-  }
+
   /* footer section */
   footer {
     display: block;
