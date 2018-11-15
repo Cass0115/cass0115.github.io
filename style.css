@@ -7,13 +7,13 @@
  }
 
 .about-section {
-  height: 50%;
+  height: 47%;
   position: sticky;
   position: -webkit-sticky;
   left: 0;
   top:0;
   background-color: #fff;
-  padding-top: 20rem;
+  padding-top: 26rem;
 }
 
 .about-section h1 {
@@ -76,7 +76,8 @@
 
 .projects {
   display: grid;
-  grid-gap: 24px;
+  grid-row-gap: 32px;
+  grid-column-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   background-color: #f2f1f6;
   padding: 5%;
@@ -88,6 +89,9 @@
   padding-bottom: 5%;
   min-height: 565px;  
   position: relative;
+  box-shadow: 0 10px 20px 0 rgba(164, 141, 185, 0.2);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .project-top {
@@ -155,6 +159,11 @@ h3 a {
 /* Project hover */
 .project:hover .learn {
   display: block;
+}
+.project:hover {
+  box-shadow: 0 5px 10px 0 rgba(164, 141, 185, 0.2);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
 }
 .project .learn:hover {
   display: block;
@@ -332,7 +341,7 @@ footer {
 }
 
 .footer-logo {
-  padding: 4.5rem 5rem 4.5rem 5rem;
+  padding: 4.5rem 5rem 4.5rem 10rem;
 }
 
 .icon {
@@ -350,12 +359,20 @@ footer {
   padding: 0;
 }
 
+li a:hover {
+  color: #a48db9;
+}
+
 .social-area {
   float: right;
-  margin-right: 200px;
+  margin-right: 175px;
 }
 
 @media (max-width: 1050px) {
+  .about-section {
+    padding-top: 20rem;
+    height: 29%;
+  }
   .about-section h1 {
     padding-top: 5%;
   }
@@ -426,6 +443,21 @@ footer {
     margin-left: 5%;
     padding-top: 6%;
   }
+  .work-together {
+    display: block;
+    padding-top: 20%;
+    margin-left: 10%;
+  }
+  .footer-logo {
+    padding: 0;
+  }
+  .work {
+    padding-top: 10%;
+  }
+  .message-area,
+  .social-area {
+    float: none;
+  }
 }
 
 @media (max-width: 550px) {
@@ -435,27 +467,6 @@ footer {
     background-size: cover;
     width: 100%;
     height: 500px;
-  }
-
-  /* footer section */
-  footer {
-    display: block;
-    height: 90vh;
-  }
-  .social-area {
-    margin: 0;
-    float: left;
-  }
-  .work-together {
-    display: block;
-    margin-left: 10%;
-    padding-top: 35vh;
-  }
-  .work h3 {
-    padding-top: 10%;
-  }
-  .footer-logo {
-    padding: 1rem;
   }
 }
 
