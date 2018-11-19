@@ -7,7 +7,7 @@
  }
 
 .about-section {
-  height: 47%;
+  height: 45%;
   position: sticky;
   position: -webkit-sticky;
   left: 0;
@@ -80,18 +80,15 @@
   grid-column-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   background-color: #f2f1f6;
-  padding: 5%;
+  padding: 5% 5% 7% 5%;
 }
 
 .project {
   background-color: #fff;
   margin: 0 2.5%;
   padding-bottom: 5%;
-  min-height: 565px;  
+  min-height: 600px;  
   position: relative;
-  box-shadow: 0 10px 20px 0 rgba(164, 141, 185, 0.2);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .project-top {
@@ -118,7 +115,7 @@
   font-family: 'Canela Web';
   font-size: 26px;
   font-weight: 300;
-  padding-top: 10%;
+  padding-top: 32px;
   padding-left: 8%;
   text-align: left;
   color: #1b0f51;
@@ -153,20 +150,25 @@ h3 a {
   text-transform: uppercase;
   margin-left: 8%;
   position: absolute;
-  bottom: 12px;
+  bottom: 32px;
 }
 
 /* Project hover */
 .project:hover .learn {
   display: block;
+  animation: fadein 0.5s ease;
 }
-.project:hover {
-  box-shadow: 0 5px 10px 0 rgba(164, 141, 185, 0.2);
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .project .learn:hover {
   display: block;
+  transition-delay: 1s;
 }
 a:hover {
   text-decoration: none;
@@ -493,6 +495,9 @@ li a:hover {
   }
   .coffee .grab-coffee {
     padding-left: 0;
+  }
+  .projects {
+    justify-content: center;
   }
   .project {
     margin-top: 32px;
