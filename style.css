@@ -508,4 +508,7 @@ li a:hover {
     width: 80%;
     padding-top: 7rem;
   }
+  .footer {
+    height: 100%;
+  }
 }
