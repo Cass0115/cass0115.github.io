@@ -176,7 +176,7 @@ a:hover {
 
 /* Image reveal */
 .large-image {
-  background-image: url(images/terrazzo@2x.jpg) no-repeat;
+  background-image: url(images/terrazzo@2x.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
