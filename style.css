@@ -477,7 +477,7 @@ li a:hover {
   }
 }
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   /* image section */
   .large-image {
     background-image: url(images/terrazzo.jpg);
