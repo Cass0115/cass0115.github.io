@@ -312,10 +312,6 @@ footer {
   line-height: 1.14;
 }
 
-.message-area {
-  float: left;
-}
-
 .message, .social {
   font-family: "canada-type-gibson";
   text-transform: uppercase;
@@ -364,11 +360,18 @@ footer {
 li a:hover {
   color: #a48db9;
 }
+.msg__soc--wrap {
+  display: flex;
+  justify-content: space-between;  
+}
 
 .social-area {
-  float: right;
-  margin-right: 175px;
+  margin-right: 34%; 
 }
+
+/* .social-area li {
+  white-space: nowrap;
+} */
 
 @media (max-width: 1050px) {
   .about-section {
@@ -389,6 +392,12 @@ li a:hover {
     font-size: 32px;
     margin-top: 0;
     padding-top: 9rem;
+  }
+  .msg__soc--wrap {
+    display: block; 
+  }
+  .social-area {
+    margin: 0;
   }
 }
 
@@ -427,6 +436,12 @@ li a:hover {
   } 
 }
 
+@media (max-width: 768px) {
+  .project .learn {
+    display: block;
+  }
+}
+
 @media (max-width: 700px) {
   .fact__section {
     height: 100%;
@@ -458,7 +473,7 @@ li a:hover {
   }
   .message-area,
   .social-area {
-    float: none;
+    margin-right: 0;
   }
 }
 
