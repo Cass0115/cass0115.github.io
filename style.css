@@ -177,7 +177,6 @@ a:hover {
 /* Image reveal */
 .large-image {
   background-image: url(images/terrazzo@2x.jpg);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -480,9 +479,6 @@ li a:hover {
 @media only screen and (max-width: 550px) {
   /* image section */
   .large-image {
-    background-image: url(images/terrazzo.jpg);
-    background-size: cover;
-    width: 100%;
     height: 500px;
   }
 }
