@@ -481,6 +481,7 @@ li a:hover {
   /* image section */
   .large-image {
     height: 500px;
+    background-size: 300% auto;
   }
 }
 
