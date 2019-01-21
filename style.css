@@ -240,6 +240,7 @@ blockquote p {
   color: #fff;
   padding-top: 10em;
 }
+
 .fact__wrap {
   margin-left: 10%;
   margin-right: 4%;
@@ -279,12 +280,14 @@ blockquote p {
   font-size: 68px;
   font-family: 'Canela Web';
   padding-top: 2vh;
+  font-weight: 400;
 }
 
 .fact__section h4 {
   padding: 40px 0 20px 0;
   font-size: 26px;
   font-family: 'Canela Web';
+  font-weight: 400;
 }
 
 .fact__section p {
@@ -329,7 +332,8 @@ footer {
   text-transform: uppercase;
   color: #a48db9;
   font-weight: 600;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 16px;
   letter-spacing: 4px;
   font-size: 12px;
 }
@@ -341,7 +345,6 @@ footer {
 
 .email {
   font-family: "adobe-caslon-pro";
-  font-style: italic;
   font-size: 24px;
 }
 
