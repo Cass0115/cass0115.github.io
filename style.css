@@ -112,15 +112,6 @@ p a {
   width: 100%;
 }
 
-.project p {
-  font-family: "essonnes-text";
-  max-width: 80%;
-  color: #7b7b7b;
-  line-height: 1.5;
-  text-align: left;
-  padding-left: 8%;
-}
-
 .project a {
   text-decoration: none;
 }
@@ -130,13 +121,24 @@ p a {
   font-size: 26px;
   font-weight: 300;
   padding-top: 32px;
-  padding-left: 8%;
+  padding-left: 20px;
+  padding-bottom: 12px;
   text-align: left;
   color: #1b0f51;
 }
 
 h3 a {
   color: #000;
+}
+
+.project p {
+  font-family: "essonnes-text";
+  max-width: 80%;
+  color: #7b7b7b;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 12px
 }
 
 .project ul {
@@ -151,7 +153,7 @@ h3 a {
   text-transform: uppercase;
   line-height: 22px;
   color: #a48db9;
-  padding-left: 8%;
+  padding-left: 20px;
 }
 
 .project .learn {
@@ -162,7 +164,7 @@ h3 a {
   font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
-  margin-left: 8%;
+  padding-left: 20px;
   position: absolute;
   bottom: 20px;
 }
@@ -180,6 +182,7 @@ h3 a {
     opacity: 1;
   }
 }
+
 .project .learn:hover {
   display: block;
   transition-delay: 1s;
@@ -205,7 +208,7 @@ a:hover {
   line-height: 1.33;
   margin: 0 auto;
   padding-top: 8rem;
-  width: 65%;
+  width: 55%;
   font-family: 'canela web';
   quotes: "\201C""\201D""\2018""\2019";
 }
@@ -239,15 +242,17 @@ blockquote p {
 }
 .fact__wrap {
   margin-left: 10%;
-  margin-right: 11%;
+  margin-right: 4%;
+  max-width: 1340px;
 }
 
-.fact-first {
+.fact-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 275px;
-  grid-template-areas:
-    "a b c d e f g h";
+  grid-auto-rows: minmax(275px, auto);
+  grid-template-areas: 
+    "a b c d e f g h"
+    "i j k l m n o p";
 }
 
 .one {
@@ -258,19 +263,13 @@ blockquote p {
   grid-area: h;
 }
 
-.fact-second {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 275px;
-  grid-template-areas:
-    'i j k l m n o p ';
-  padding-top: 8em;
-}
 .three {
   grid-area: i;
+  padding-top: 56px;
 }
 .four {
   grid-area: j;
+  padding-top: 56px;
   margin-left: 11%;
 }
 
@@ -382,12 +381,24 @@ li a:hover {
   margin-right: 34%; 
 }
 
-/* .social-area li {
-  white-space: nowrap;
-} */
-@media (max-width: 1330px) {
+@media (max-width: 1315px) {
   .projects {
     grid-template-columns: repeat(1, 300px);
+  }
+  .one {
+    grid-area: a;
+    margin-right: 11%;
+  }
+  .two {
+    grid-area: c;
+  }
+  .three {
+    grid-area: e;
+    padding: 0;
+  }
+  .four {
+    grid-area: i;
+    margin: 0;
   }
 }
 
@@ -406,6 +417,13 @@ li a:hover {
     font-size: 32px;
     margin-top: 0;
     padding-top: 9rem;
+  }
+  .three {
+    grid-area: i;
+    padding-top: 56px;
+  }
+  .four {
+    grid-area: k;
   }
   .msg__soc--wrap {
     display: block; 
@@ -468,8 +486,7 @@ li a:hover {
     padding-bottom: 10em;
     padding-top: 4em;
   }
-  .fact-first,
-  .fact-second {
+  .fact-grid {
     display: block;
     padding: 0;
     margin: 0;
