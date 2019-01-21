@@ -43,7 +43,7 @@ p a {
 }
 
 .about-section p {
-  font-family: "essonnes-text";
+  font-family: "adobe-caslon-pro";
   max-width: 90%;
   line-height: 30px;
   text-align: left;
@@ -132,7 +132,7 @@ h3 a {
 }
 
 .project p {
-  font-family: "essonnes-text";
+  font-family: "adobe-caslon-pro";
   max-width: 80%;
   color: #7b7b7b;
   line-height: 1.5;
@@ -282,7 +282,7 @@ blockquote p {
 }
 
 .fact__section h4 {
-  padding-top: 40px;
+  padding: 40px 0 20px 0;
   font-size: 26px;
   font-family: 'Canela Web';
 }
@@ -292,7 +292,7 @@ blockquote p {
   line-height: 1.6;
   text-align: left;
   width: 235px;
-  font-family: "essonnes-text";
+  font-family: "adobe-caslon-pro";
   letter-spacing: .4px;
 }
 
@@ -340,7 +340,7 @@ footer {
 }
 
 .email {
-  font-family: "essonnes-text";
+  font-family: "adobe-caslon-pro";
   font-style: italic;
   font-size: 24px;
 }
