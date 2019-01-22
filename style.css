@@ -45,9 +45,9 @@ p a {
 .about-section p {
   font-family: "adobe-caslon-pro";
   max-width: 90%;
-  line-height: 30px;
+  line-height: 1.5; 
   text-align: left;
-  padding: 4% 8% 2% 20%;
+  padding: 4% 8% 4% 20%;
   color: #7b7b7b;
 }
 
@@ -133,12 +133,10 @@ h3 a {
 
 .project p {
   font-family: "adobe-caslon-pro";
-  max-width: 80%;
   color: #7b7b7b;
   line-height: 1.5;
   text-align: left;
-  padding-left: 20px;
-  padding-bottom: 12px
+  padding: 0 24px 12px 20px;
 }
 
 .project ul {
@@ -316,7 +314,7 @@ footer {
 .work-together {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-top: 25vh;
+  padding-top: 21vh;
   padding-bottom: 15vh;
 }
 
