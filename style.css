@@ -163,6 +163,10 @@ h3 a {
   padding-left: 20px;
 }
 
+.project li a {
+  text-decoration: none;
+}
+
 .project .learn {
   display: none;
   font-family: 'canada-type-gibson';
