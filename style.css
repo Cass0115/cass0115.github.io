@@ -3,6 +3,42 @@
   margin: 0;
   padding: 0;
 }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+html {
+  scrollbar-width: none;
+}
+#progressBarContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #a48db9, #fff);
+  height: 100%;
+  opacity: 100%;
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top,#a48db9), #fff;
+  height: 0;
+  opacity: 0;
+}
+
 .inner-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
